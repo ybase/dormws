@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>dormws</display-name>
+
+	<listener>
+		<listener-class>com.ybase.bas.listener.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>dormws</servlet-name>
+		<servlet-class>com.ybase.dorm.web.DormWSServer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dormws</servlet-name>
+		<url-pattern>/dormws</url-pattern>
+	</servlet-mapping>  
+
+	<!-- <servlet>
+		<servlet-name>userListCtrl</servlet-name>
+		<servlet-class>com.ybase.demo.web.UserListCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userListCtrl</servlet-name>
+		<url-pattern>/userListCtrl</url-pattern>
+	</servlet-mapping> -->
+
+	<!-- Session 超时设置 -->
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<!-- 400错误 -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/pages/error.jsp</location>
+	</error-page>
+	<!-- 404 页面不存在错误 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/pages/error.jsp</location>
+	</error-page>
+	<!-- 500 服务器内部错误 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/pages/error.jsp</location>
+	</error-page>
+	<!-- java.lang.Exception异常错误,依据这个标记可定义多个类似错误提示 -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/pages/error.jsp</location>
+	</error-page>
+	<!-- java.lang.NullPointerException异常错误,依据这个标记可定义多个类似错误提示 -->
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/pages/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/pages/error.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/pages/error.jsp</location>
+	</error-page>
+
+	<welcome-file-list>
+		<welcome-file>/pages/ws/ws.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

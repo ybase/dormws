@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/src-demo/bas"/>
+	<classpathentry kind="src" path="src/src-demo/demo"/>
+	<classpathentry kind="src" path="src/src-demo/vo"/>
+	<classpathentry kind="src" path="src/src-bas"/>
+	<classpathentry kind="src" path="src/src-ws/bas"/>
+	<classpathentry kind="src" path="src/src-ws/vo"/>
+	<classpathentry kind="src" path="src/src-ws/ws"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.54/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.54/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.54/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.54/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

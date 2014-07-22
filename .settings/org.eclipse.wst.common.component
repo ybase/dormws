@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dormws">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-demo/bas"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-demo/demo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-demo/vo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-bas"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-ws/bas"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-ws/vo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/src-ws/ws"/>
+        <property name="context-root" value="dormws"/>
+        <property name="java-output-path" value="/dormws/build/classes"/>
+    </wb-module>
+</project-modules>
